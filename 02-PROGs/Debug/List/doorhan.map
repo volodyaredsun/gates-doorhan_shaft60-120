@@ -1,0 +1,30 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+CountSen1 (doorhan.c)                                                             0x0080       2
+CountSen2 (doorhan.c)                                                             0x0082       2
+key (doorhan.c)                                                                   0x0084       1
+CountKey (doorhan.c)                                                              0x0085       2
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+sen_sn_cl                                                                         R3           1
+sen_sn_op                                                                         R2           1
+PressedKey                                                                        R5           1
+SA                                                                                R4           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x00040     14
+SwitchState                                                                       0x0004E     50
+ReadSenCL                                                                         0x00080     32
+ReadSenOP                                                                         0x000A0     32
+ReadKey                                                                           0x000C0     36
+timer1_ovf_isr                                                                    0x000E4      4
+InitMCU                                                                           0x000E8     45
